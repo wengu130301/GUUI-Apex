@@ -77,5 +77,5 @@ brunch polaris
 - [ ] 50. 产品 mk 声明 overlay/图标包 + 固化国内 NTP/网络校验
 
 ## 说明
-- 版本基线：LineageOS 22.2 / Android 15（polaris 当前最高且仍在 nightly 维护，符合"越高越好"）。
+- 版本基线：LineageOS 23.2 / Android 16（polaris 当前最高且仍在 nightly 维护，符合"越高越好"）。
 - 设计资产版权：LaswI / 文文设计打造。
