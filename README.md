@@ -14,6 +14,8 @@
 - ⚠️ 资产 `apex.png` 字样为 "GUVI APEX"，文档与代码统一使用 **GUUI Apex**（如需改图请重新出图）。
 
 ## 工程方式（全云端）
+> 注：壁纸/动画等二进制素材在本机只做必要的格式转换与 zip 打包后上传 GitHub，不涉及 AOSP 编译。
+
 - 所有源码改动 **只在 GitHub 完成**：fork 上游仓库 → 在 fork 上提交 GUUI Apex 改造 → 由 `guui-apex-manifest` 把 fork 串成完整构建。
 - **本机不 clone AOSP、不编译**；实际出包需在具备 AOSP 构建环境的构建机（Linux + 大容量磁盘）上 `repo init` 本 manifest 后 `brunch polaris`。
 - 已完成/进行中的 fork 见下方「仓库索引」。
@@ -38,10 +40,10 @@ brunch polaris
 - [ ] 1. LineageOS 全部品牌文本替换为 GUUI Apex（build/设备树/输出名/版本标识）
 - [ ] 44. build/make 调整 PRODUCT_NAME / PRODUCT_BRAND / PRODUCT_MODEL
 - [ ] 43. device/xiaomi/polaris 设备属性增加 GUUI Apex 标识
-### B. 开机/关机动画与壁纸
-- [ ] 2. 开机第一屏静态 logo → LaswI（适配 Mix2s 分辨率）
-- [ ] 3-5. bootanimation.zip 放入设备树并打包、校验 1080×2160
-- [ ] 6. 关机动画配套 LaswI / 蓝色虎皮鹦鹉
+### B. 开机/关机动画与壁纸（进行中：默认壁纸 + 开机/关机动画已完成；Launcher3/锁屏/向导/预览/apex 待续）
+- [x] 2. 开机第一屏静态 logo → LaswI（适配 Mix2s 分辨率）
+- [x] 3-5. bootanimation.zip 放入设备树并打包、校验 1080×2160
+- [x] 6. 关机动画配套 LaswI / 蓝色虎皮鹦鹉
 - [ ] 7-13. guguw.png 替换桌面/锁屏壁纸、Launcher3/SystemUI 配置、预览图、首次向导、恢复出厂保持
 - [ ] 28. apex.png 放入 overlay Settings 资源并声明
 ### C. 主题 / RRO / 图标
